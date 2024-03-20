@@ -8,7 +8,9 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./app:/app
+      - ./app:/var/www/html/app
+      - ./resources:/var/www/html/resources
+      - ./routes:/var/www/html/routes
     depends_on:
       - db
 
